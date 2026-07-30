@@ -20,10 +20,16 @@ function renderContent() {
   document.getElementById("hero-name").innerHTML = `Karla<br><em>Valeria</em><br>Sotelo`;
   document.getElementById("hero-titulo").textContent = artist.titulo;
   document.getElementById("hero-statement").textContent = artist.statement;
-  document.getElementById("hero-artwork").src = heroArtwork;
+  const heroImg = document.getElementById("hero-artwork");
+  heroImg.src = heroArtwork;
+  heroImg.style.cursor = "pointer";
+  heroImg.onclick = () => openLightbox(heroArtwork, "ECO", "2026 · Óleo sobre lienzo · 30 × 40 cm");
 
   // About
-  document.getElementById("about-portrait").src = artistPortrait;
+  const aboutImg = document.getElementById("about-portrait");
+  aboutImg.src = artistPortrait;
+  aboutImg.style.cursor = "pointer";
+  aboutImg.onclick = () => openLightbox(artistPortrait, artist.nombre, artist.titulo);
   document.getElementById("about-origin").textContent = artist.origen;
   document.getElementById("about-name").textContent = artist.nombre;
   document.getElementById("about-titulo").textContent = artist.titulo;
