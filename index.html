@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio artístico de K. Valeria Gómez Sotelo — Artista Visual. Pintura al óleo, acrílico, acuarela, dibujo tradicional. UNICACH, Tuxtla Gutiérrez, Chiapas." />
+  <meta property="og:title" content="K. Valeria Sotelo — Portafolio Artístico" />
+  <meta property="og:description" content="Exploro la relación entre el dibujo, la pintura y las formas tradicionales del arte visual." />
+  <title>K. Valeria Sotelo — Portafolio Artístico</title>
+
+  <!-- Favicon / Ícono de la pestaña del navegador -->
+  <link rel="icon" type="image/jpeg" href="img/icon.jpg" />
+  <link rel="apple-touch-icon" href="img/icon.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+  <header id="navbar" data-testid="navbar">
+    <div class="nav-inner">
+      <button id="nav-logo" class="nav-logo" aria-label="Ir al inicio">K. Valeria Sotelo</button>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links" id="nav-links">
+          <li><button data-to="sobre-mi">Sobre mí</button></li>
+          <li><button data-to="trayectoria">Trayectoria</button></li>
+          <li><button data-to="exposiciones">Exposiciones</button></li>
+          <li><button data-to="obras">Obras</button></li>
+          <li><button data-to="danza">Ballet Folclórico</button></li>
+          <li><button data-to="reconocimientos">Reconocimientos</button></li>
+          <li><button data-to="contacto">Contacto</button></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="mobile-menu-toggle" class="btn-hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <svg id="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg id="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="mobile-menu" role="menu">
+      <button data-to="inicio" role="menuitem">Inicio</button>
+      <button data-to="sobre-mi" role="menuitem">Sobre mí</button>
+      <button data-to="trayectoria" role="menuitem">Trayectoria</button>
+      <button data-to="exposiciones" role="menuitem">Exposiciones</button>
+      <button data-to="obras" role="menuitem">Obras</button>
+      <button data-to="danza" role="menuitem">Ballet Folclórico</button>
+      <button data-to="reconocimientos" role="menuitem">Reconocimientos</button>
+      <button data-to="contacto" role="menuitem">Contacto</button>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <section id="inicio" class="hero">
+    <div class="hero-inner container">
+      <!-- Text column -->
+      <div class="hero-text">
+        <p class="label-eyebrow reveal" id="hero-origin"></p>
+        <h1 class="hero-name reveal" id="hero-name"></h1>
+        <p class="hero-titulo reveal font-serif" id="hero-titulo"></p>
+        <p class="hero-statement reveal" id="hero-statement"></p>
+        <div class="hero-btns reveal">
+          <button id="hero-trayectoria-btn" class="btn-primary" data-to="trayectoria">
+            Conocer mi trayectoria
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+          <button id="hero-portafolio-btn" class="btn-outline" data-to="obras">
+            Ver portafolio
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Image column -->
+      <div class="hero-img-col">
+        <div class="hero-img-frame">
+          <img id="hero-artwork" src="" alt="Obra destacada de la artista" loading="eager" />
+          <div class="hero-img-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="hero-badge">
+          <p class="label-eyebrow">Obra destacada</p>
+          <p class="font-serif-italic hero-badge-title">ECO (2026) · Óleo sobre lienzo</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="scroll-indicator" data-to="sobre-mi" aria-label="Ir a la siguiente sección">
+      <span class="label-eyebrow">Scroll</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+    </button>
+  </section>
+
+  <!-- ═══════════════════════ MARQUEE ═══════════════════════ -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track" id="marquee-track"></div>
+  </div>
+
+  <!-- ═══════════════════════ ABOUT ═══════════════════════ -->
+  <section id="sobre-mi" class="section-tint">
+    <div class="section container">
+      <div class="about-grid">
+        <!-- Portrait -->
+        <div class="about-portrait-col">
+          <div class="about-portrait reveal">
+            <img id="about-portrait" src="" alt="Retrato de K. Valeria Gómez Sotelo" loading="lazy" />
+          </div>
+          <p class="label-eyebrow reveal" id="about-origin" style="margin-top:1rem"></p>
+        </div>
+
+        <!-- Content -->
+        <div class="about-content">
+          <p class="label-eyebrow reveal">01 — Sobre mí</p>
+          <h2 class="about-name reveal font-serif" id="about-name"></h2>
+          <p class="about-titulo reveal font-serif-italic" id="about-titulo"></p>
+          <p class="about-bio reveal" id="about-bio"></p>
+          <p class="about-statement reveal font-serif" id="about-statement"></p>
+          <div class="about-tags reveal" id="about-tags"></div>
+          <div class="about-facts reveal" id="about-facts"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ EDUCATION ═══════════════════════ -->
+  <section id="educacion" class="section container">
+    <div class="sh-grid section-heading">
+      <div><p class="label-eyebrow reveal">02 — Formación</p></div>
+      <div>
+        <h2 class="section-title font-serif reveal">Educación académica</h2>
+        <p class="section-subtitle reveal">Formación formal e institucional en artes visuales.</p>
+      </div>
+    </div>
+
+    <div class="edu-grid">
+      <!-- Grados -->
+      <div>
+        <p class="edu-group-label font-serif-italic reveal">Grados académicos</p>
+        <div id="edu-grados"></div>
+      </div>
+      <!-- Cursos -->
+      <div>
+        <p class="edu-group-label font-serif-italic reveal">Cursos y talleres</p>
+        <div id="edu-cursos"></div>
+      </div>
+    </div>
+
+    <!-- Colectivos -->
+    <div class="colectivos-section">
+      <p class="label-eyebrow reveal" style="margin-bottom:1.5rem">Colectivos artísticos</p>
+      <div id="colectivos-list"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ TRAJECTORY ═══════════════════════ -->
+  <section id="trayectoria" class="section-tint">
+    <div class="section container">
+      <div class="sh-grid section-heading">
+        <div><p class="label-eyebrow reveal">03 — Trayectoria</p></div>
+        <div>
+          <h2 class="section-title font-serif reveal">Hitos artísticos</h2>
+          <p class="section-subtitle reveal">Presentaciones, selecciones y momentos clave en mi trayectoria artística.</p>
+        </div>
+      </div>
+      <div id="trayectoria-list"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ EXHIBITIONS ═══════════════════════ -->
+  <section id="exposiciones" class="section container">
+    <div class="sh-grid section-heading">
+      <div><p class="label-eyebrow reveal">04 — Exposiciones</p></div>
+      <div>
+        <h2 class="section-title font-serif reveal">Individuales y colectivas</h2>
+        <p class="section-subtitle reveal">Muestras y exposiciones académicas con evidencia documental.</p>
+      </div>
+    </div>
+
+    <!-- Individuales -->
+    <div class="expo-group">
+      <p class="expo-group-label font-serif-italic reveal">Exposiciones individuales</p>
+      <div id="expo-individuales"></div>
+    </div>
+    <!-- Colectivas -->
+    <div class="expo-group" style="margin-top:0">
+      <p class="expo-group-label font-serif-italic reveal">Exposiciones colectivas</p>
+      <div id="expo-colectivas"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ GALLERY ═══════════════════════ -->
+  <section id="obras" class="section-tint">
+    <div class="section container">
+      <div class="sh-grid section-heading">
+        <div><p class="label-eyebrow reveal">05 — Portafolio</p></div>
+        <div>
+          <h2 class="section-title font-serif reveal">Selección de obras</h2>
+          <p class="section-subtitle reveal">Una selección de mis obras en óleo, acrílico sobre minagris y técnicas secas sobre papel Fabriano.</p>
+        </div>
+      </div>
+      <div class="gallery-grid reveal" id="gallery-grid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ DANZA FOLCLÓRICA ═══════════════════════ -->
+  <section id="danza" class="section container">
+    <div class="sh-grid section-heading">
+      <div><p class="label-eyebrow reveal">06 — Interdisciplina</p></div>
+      <div>
+        <h2 class="section-title font-serif reveal">Ballet Folclórico UNICACH</h2>
+        <p class="section-subtitle reveal">Práctica interdisciplinaria de danza tradicional como parte del estudio de cuerpo, ritmo y espacio.</p>
+      </div>
+    </div>
+    <div class="gallery-grid gallery-grid--dance reveal" id="danza-grid"></div>
+  </section>
+
+  <!-- ═══════════════════════ AWARDS ═══════════════════════ -->
+  <section id="reconocimientos" class="section-tint">
+    <div class="section container">
+      <div class="sh-grid section-heading">
+        <div><p class="label-eyebrow reveal">07 — Reconocimientos</p></div>
+        <div>
+          <h2 class="section-title font-serif reveal">Distinciones</h2>
+          <p class="section-subtitle reveal">Menciones honoríficas y reconocimientos recibidos en la Facultad de Artes de la UNICACH.</p>
+        </div>
+      </div>
+      <div class="awards-grid" id="awards-grid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ TECHNIQUES ═══════════════════════ -->
+  <section id="tecnicas" class="section container">
+    <div class="sh-grid section-heading">
+      <div><p class="label-eyebrow reveal">08 — Técnicas</p></div>
+      <div>
+        <h2 class="section-title font-serif reveal">Disciplinas y Medios</h2>
+        <p class="section-subtitle reveal">Medios pictóricos, gráficos y de expresión corporal que integran mi práctica.</p>
+      </div>
+    </div>
+    <div class="tech-grid reveal" id="tech-grid"></div>
+  </section>
+
+  <!-- ═══════════════════════ DOCUMENTS ═══════════════════════ -->
+  <section id="documentos" class="section-tint">
+    <div class="section container">
+      <div class="sh-grid section-heading">
+        <div><p class="label-eyebrow reveal">09 — Documentos</p></div>
+        <div>
+          <h2 class="section-title font-serif reveal">Archivo documental</h2>
+          <p class="section-subtitle reveal">Constancias y reconocimientos oficiales emitidos por la UNICACH.</p>
+        </div>
+      </div>
+      <div class="docs-grid" id="docs-grid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+  <section id="contacto" class="section">
+    <div class="section container">
+      <div class="contact-grid">
+        <!-- Left info -->
+        <div class="contact-info">
+          <p class="label-eyebrow reveal">10 — Contacto</p>
+          <h2 class="contact-title font-serif reveal">Conversemos</h2>
+          <p class="contact-desc reveal">Para consultas sobre obras, comisiones o colaboraciones artísticas.</p>
+          <div class="contact-items reveal" id="contact-items"></div>
+        </div>
+
+        <!-- Right form -->
+        <form id="contact-form" class="contact-form reveal" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="f-nombre">Nombre</label>
+            <input class="form-input" type="text" id="f-nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f-email">Correo electrónico</label>
+            <input class="form-input" type="email" id="f-email" name="email" placeholder="tu@correo.com" autocomplete="email" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f-mensaje">Mensaje</label>
+            <textarea class="form-textarea" id="f-mensaje" name="mensaje" placeholder="¿En qué puedo ayudarte?" required></textarea>
+          </div>
+          <button class="btn-send" type="submit" id="btn-send">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Enviar mensaje
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <span class="footer-logo font-serif" id="footer-logo"></span>
+      <span class="footer-copy" id="footer-copy"></span>
+      <ul class="footer-links">
+        <li><a id="footer-email" href="#">Correo</a></li>
+        <li><a id="footer-ig" href="#" target="_blank" rel="noreferrer">Instagram</a></li>
+        <li><a id="footer-fb" href="#" target="_blank" rel="noreferrer">Facebook</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════ EXHIBITION MODAL ═══════════════════════ -->
+  <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title-text">
+    <div class="modal-box" role="document">
+      <button class="modal-close" id="modal-close-btn" aria-label="Cerrar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ LIGHTBOX ═══════════════════════ -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+    <button class="lightbox-close" id="lightbox-close-btn" aria-label="Cerrar imagen">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+    <div class="lightbox-info">
+      <h3 class="font-serif-italic" id="lightbox-title"></h3>
+      <p id="lightbox-desc"></p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ TOASTS ═══════════════════════ -->
+  <div id="toast-container" class="toast-container" role="region" aria-live="polite" aria-label="Notificaciones"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
