@@ -462,6 +462,27 @@ function closeExpoModal() {
   document.body.style.overflow = "";
 }
 
+function openLightbox(url, title, desc) {
+  const lightbox = document.getElementById("lightbox");
+  const videoEl = document.getElementById("lightbox-video");
+  if (videoEl) videoEl.style.display = "none";
+
+  const img = document.getElementById("lightbox-img");
+  img.style.display = "block";
+  img.src = url;
+  
+  document.getElementById("lightbox-title").textContent = title || "";
+  document.getElementById("lightbox-desc").textContent = desc || "";
+
+  lightbox.classList.add("open");
+  document.body.style.overflow = "hidden";
+
+  document.getElementById("lightbox-close-btn").onclick = closeLightbox;
+  lightbox.onclick = e => {
+    if (e.target === lightbox) closeLightbox();
+  };
+}
+
 function openVideoModal(videoUrl, title, desc, posterUrl) {
   const lightbox = document.getElementById("lightbox");
   const img = document.getElementById("lightbox-img");
