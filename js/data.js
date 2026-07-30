@@ -5,7 +5,7 @@
 const artist = {
   nombre: "K. Valeria Gómez Sotelo",
   firma: "K. Valeria Sotelo",
-  titulo: "Artista Visual",
+  titulo: "K. Valeria Sotelo — Artista Visual",
   statement: "Exploro la relación entre el dibujo, la pintura y las formas tradicionales del arte visual, construyendo un lenguaje donde la materia y mi práctica disciplinada convergen.",
   bio: "Soy estudiante de la Licenciatura en Artes Visuales en la Universidad de Ciencias y Artes de Chiapas (UNICACH). Mi producción plástica se centra principalmente en la pintura al óleo, el acrílico, las técnicas secas y el dibujo tradicional, complementando mi formación artística con disciplinas de expresión corporal como el ballet folclórico.",
   origen: "Tuxtla Gutiérrez, Chiapas, México",
