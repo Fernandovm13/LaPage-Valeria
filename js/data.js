@@ -21,9 +21,9 @@ const artist = {
 };
 
 const contacto = {
-  email: "karlavaleria.gomezsotelo@gmail.com",
-  telefono: "963 140 0182",
-  whatsapp: "https://wa.me/529631400182",
+  email: "art.bysotelo@gmail.com",
+  telefono: "9631276089",
+  whatsapp: "https://wa.me/9631276089",
   direccion: "Del Ejército Nacional 2, Bienestar Soc, 29077 Tuxtla Gutiérrez, Chis.",
   ubicacion: "Tuxtla Gutiérrez, Chiapas, México",
   instagram: "https://www.instagram.com/valsotelo_9?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
@@ -37,16 +37,16 @@ const formacion = [
   {
     grado: "Licenciatura en Artes Visuales",
     institucion: "Universidad de Ciencias y Artes de Chiapas (UNICACH)",
-    especialidad: "Artes Visuales (Actualmente cursando 2.º semestre | Cursado previo hasta 4.º semestre)",
-    inicio: "2024",
+    especialidad: "Artes Visuales",
+    inicio: "2023",
     fin: "Presente"
   },
   {
     grado: "Curso Preuniversitario en Artes Visuales",
     institucion: "Universidad de Ciencias y Artes de Chiapas (UNICACH)",
     especialidad: "Formación previa en producción visual y exposición de mis proyectos finales",
-    inicio: "2025",
-    fin: "2025"
+    inicio: "2023",
+    fin: "2023"
   },
   {
     grado: "Formación Complementaria en Ballet Folclórico",
